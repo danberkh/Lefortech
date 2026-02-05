@@ -439,3 +439,66 @@ footer {
         transform: rotate(-45deg) translate(5px, -6px);
     }
 }
+
+/* Brand Carousel */
+.brand-carousel {
+    background: var(--white);
+    padding: 40px 0;
+    overflow: hidden;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.brand-track {
+    display: flex;
+    gap: 60px;
+    width: max-content;
+    animation: scroll 40s linear infinite;
+}
+
+.brand-slide {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--text-light);
+    opacity: 0.7;
+    white-space: nowrap;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.brand-slide:hover {
+    color: var(--primary-blue);
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-50% - 30px)); /* Adjust based on gap */
+    }
+}
+
+/* Mobile Adjustments for Carousel */
+@media (max-width: 768px) {
+    .brand-carousel {
+        padding: 30px 0;
+    }
+    
+    .brand-track {
+        gap: 40px;
+        animation-duration: 30s;
+    }
+
+    .brand-slide {
+        font-size: 1.2rem;
+    }
+    
+    @keyframes scroll {
+        100% {
+            transform: translateX(calc(-50% - 20px));
+        }
+    }
+}

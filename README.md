@@ -15,14 +15,6 @@ Sitio web institucional para **Lefortech**, una empresa de soporte IT y mantenim
 *   `/assets`: Imágenes y recursos estáticos.
 *   `index.html`: Página principal.
 
-## Instalación y Uso
-
-1.  Clonar el repositorio:
-    ```bash
-    git clone https://github.com/danberkh/Lefortech.git
-    ```
-2.  Abrir `index.html` en tu navegador.
-
 ## Créditos
 
 Desarrollado por [Dan Berkh](https://github.com/danberkh).
